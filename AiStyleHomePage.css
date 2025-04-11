@@ -1,0 +1,374 @@
+/* Import Electrolize font */
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+.ai-home-page {
+  min-height: 100vh;
+  font-family: 'Electrolize', sans-serif;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 80px);
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  align-items: center;
+}
+
+.hero-content {
+  padding-right: 4rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  font-family: 'Electrolize', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-title-line {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #00c2ff;
+}
+
+.hero-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.8;
+  margin-bottom: 2.5rem;
+  max-width: 580px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.primary-btn {
+  background: #00c2ff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Electrolize', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.primary-btn:hover {
+  background: #01e4f8;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(0, 194, 255, 0.7);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Electrolize', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.secondary-btn:hover {
+  border-color: #00c2ff;
+  color: #00c2ff;
+  transform: translateY(-2px);
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brain-image {
+  width: 90%;
+  max-width: 500px;
+  z-index: 2;
+}
+
+/* Circuit paths around the brain */
+.circuit-paths {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.circuit {
+  position: absolute;
+  background: linear-gradient(90deg, transparent, #00c2ff, transparent);
+  box-shadow: 0 0 15px rgba(0, 194, 255, 0.7);
+  opacity: 0.7;
+}
+
+.path-1 {
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  transform: translate(-50%, -50%);
+  animation: pulsePath 3s infinite;
+}
+
+.path-2 {
+  top: 30%;
+  left: 50%;
+  width: 80%;
+  height: 1px;
+  transform: translate(-50%, -50%) rotate(30deg);
+  animation: pulsePath 3.5s infinite 0.5s;
+}
+
+.path-3 {
+  top: 70%;
+  left: 50%;
+  width: 80%;
+  height: 1px;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  animation: pulsePath 4s infinite 1s;
+}
+
+.path-4 {
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  animation: pulsePath 3.2s infinite 1.5s;
+}
+
+.path-5 {
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 80%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  animation: pulsePath 3.8s infinite 0.8s;
+}
+
+/* Glowing nodes */
+.glowing-nodes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.node {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #00c2ff;
+  box-shadow: 0 0 15px rgba(0, 194, 255, 0.9);
+  animation: pulseNode 2s infinite;
+}
+
+.node-1 {
+  top: 20%;
+  left: 30%;
+  animation-delay: 0.5s;
+}
+
+.node-2 {
+  top: 30%;
+  right: 25%;
+  animation-delay: 1s;
+}
+
+.node-3 {
+  top: 50%;
+  left: 20%;
+  animation-delay: 1.5s;
+}
+
+.node-4 {
+  top: 60%;
+  right: 30%;
+  animation-delay: 0.7s;
+}
+
+.node-5 {
+  top: 80%;
+  left: 40%;
+  animation-delay: 1.2s;
+}
+
+.node-6 {
+  top: 25%;
+  left: 50%;
+  animation-delay: 0.2s;
+}
+
+.node-7 {
+  top: 75%;
+  right: 40%;
+  animation-delay: 0.9s;
+}
+
+/* Social links */
+.social-links {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #00c2ff;
+}
+
+/* Slide indicators */
+.slide-indicators {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: #00c2ff;
+  height: 30px;
+  border-radius: 15px;
+}
+
+/* Animations */
+@keyframes pulsePath {
+  0%, 100% {
+    opacity: 0.3;
+    box-shadow: 0 0 5px rgba(0, 194, 255, 0.5);
+  }
+  50% {
+    opacity: 0.8;
+    box-shadow: 0 0 15px rgba(0, 194, 255, 0.9);
+  }
+}
+
+@keyframes pulseNode {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-title-line {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 3rem;
+  }
+  
+  .hero-content {
+    padding-right: 0;
+    order: 2;
+  }
+  
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .hero-image {
+    order: 1;
+    height: 400px;
+  }
+  
+  .social-links {
+    bottom: 1rem;
+  }
+  
+  .slide-indicators {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-title-line {
+    font-size: 2rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-image {
+    height: 300px;
+  }
+}

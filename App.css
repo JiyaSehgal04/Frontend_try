@@ -1,0 +1,167 @@
+/* Add these styles to your App.css */
+
+:root {
+  --ai-blue: #00c2ff;
+  --ai-dark-blue: #000000; /* Changed to black */
+  --ai-darker-blue: #000000; /* Changed to black */
+  --ai-light-blue: #01e4f8;
+  --text-color: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --ai-shadow: 0 0 20px rgba(0, 194, 255, 0.5);
+}
+
+body {
+  font-family: 'Electrolize', sans-serif;
+  background-color: black; /* Explicitly set to black */
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* General style updates */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: 'Electrolize', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--ai-blue);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--ai-light-blue);
+}
+
+button {
+  font-family: 'Electrolize', sans-serif;
+  cursor: pointer;
+}
+
+/* Updated card style */
+.card {
+  background: rgba(10, 26, 59, 0.7);
+  border: 1px solid rgba(0, 194, 255, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Updated button style */
+.btn {
+  background: var(--ai-blue);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-family: 'Electrolize', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background: var(--ai-light-blue);
+  transform: translateY(-2px);
+  box-shadow: var(--ai-shadow);
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-outline:hover {
+  border-color: var(--ai-blue);
+  color: var(--ai-blue);
+}
+
+/* Form elements */
+.form-control {
+  background: rgba(10, 26, 59, 0.5);
+  border: 1px solid rgba(0, 194, 255, 0.2); /* Fixed extra comma */
+  color: white;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  font-family: 'Electrolize', sans-serif;
+}
+
+.form-control:focus {
+  border-color: var(--ai-blue);
+  box-shadow: 0 0 0 2px rgba(0, 194, 255, 0.3);
+  outline: none;
+}
+
+/* Upload page styling */
+.upload-page {
+  background-color: transparent !important;
+}
+
+.upload-card {
+  background-color: rgba(10, 26, 59, 0.7) !important;
+  border: 1px solid rgba(0, 194, 255, 0.2);
+}
+
+.upload-header {
+  background: none !important;
+}
+
+.file-uploader {
+  background-color: rgba(10, 26, 59, 0.5) !important;
+  border-color: rgba(0, 194, 255, 0.2) !important;
+}
+
+.file-uploader.dragging {
+  border-color: var(--ai-blue) !important;
+  background-color: rgba(0, 194, 255, 0.1) !important;
+}
+
+/* Results page styling */
+.results-dashboard {
+  background-color: transparent !important;
+}
+
+.dashboard-sidebar {
+  background-color: rgba(6, 18, 49, 0.95) !important;
+}
+
+.dashboard-content .content-card {
+  background-color: rgba(10, 26, 59, 0.7) !important;
+  border: 1px solid rgba(0, 194, 255, 0.2);
+}
+
+/* Placeholder styling */
+::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 26, 59, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 194, 255, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 194, 255, 0.7);
+}
